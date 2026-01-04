@@ -165,7 +165,7 @@ const ScrollMask = ({
         )}
       />
     </>
-  )
+  );
 };
 
 export { ScrollArea, ScrollBar };
