@@ -127,15 +127,15 @@ const ScrollMask = ({
         aria-hidden="true"
         style={
           {
-            "--vertical-max-mask-height": `${size}px`,
+            "--vertical-mask-height": `${size}px`,
           } as React.CSSProperties
         }
         className={cn(
           "pointer-events-none absolute inset-0 z-10",
           "before:absolute before:inset-x-0 before:top-0 before:transition-[height,opacity] before:duration-300 before:content-['']",
           "after:absolute after:inset-x-0 after:bottom-0 after:transition-[height,opacity] after:duration-300 after:content-['']",
-          "before:h-0 group-data-overflow-y-start:before:h-(--vertical-max-mask-height)",
-          "after:h-0 group-data-overflow-y-end:after:h-(--vertical-max-mask-height)",
+          "before:h-0 group-data-overflow-y-start:before:h-(--vertical-mask-height)",
+          "after:h-0 group-data-overflow-y-end:after:h-(--vertical-mask-height)",
           "before:opacity-0 group-data-overflow-y-start:before:opacity-100",
           "after:opacity-0 group-data-overflow-y-end:after:opacity-100",
           "before:from-background before:bg-gradient-to-b before:to-transparent",
